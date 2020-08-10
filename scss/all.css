@@ -57,6 +57,10 @@ table {
   margin-bottom: 30px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
 .mb-8 {
   margin-bottom: 8px;
 }
@@ -522,6 +526,7 @@ a {
   color: #EAF0ED;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: bold;
 }
 
 .content .productlist .picture .intro .favorite {
@@ -826,13 +831,12 @@ a {
 }
 
 .content_receipt .order_info .order_list ul li .photo {
-  width: 40%;
   margin-bottom: 16px;
 }
 
 .content_receipt .order_info .order_list ul li .photo img {
-  width: 75%;
-  display: block;
+  width: 120px;
+  height: 80px;
 }
 
 .content_receipt .order_info .order_list ul li .title {
