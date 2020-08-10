@@ -1,0 +1,182 @@
+.banner img{
+    margin-bottom: 60px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .kindlist{
+        width: 30%;
+        ul{
+            display: flex;
+            flex-direction: column; 
+            .kind2{
+                background: #EAF0ED;
+            }   
+            a{
+                padding: 16px;
+                border: solid 1px #EAF0ED;
+            }
+            a:hover{
+                background: #3f5d45;
+                color: #EAF0ED;
+                border: solid 1px #3f5d45
+            }
+        }
+        ul li , .classify  {
+            box-sizing: border-box;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center; 
+            font-family: PingFang TC;
+        }
+        .classify{
+            background: #3F5D45;
+            color: #EAF0ED;
+            display: block;
+            padding: 16px;
+        }
+    }
+    .productlist{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li{
+            width: 45%;
+        }
+        .picture{
+            position: relative;
+            /* width: 35%; */
+            .intro h2{
+                position: absolute;
+                writing-mode: vertical-rl;
+                line-height: 22px;
+                letter-spacing: 2px;
+                text-align: center;
+                padding: 10px;
+                left: 20px;
+                font-size: 16px;
+                background: #3F5D45;
+                color: #EAF0ED;
+                box-sizing: border-box;
+            }
+            .intro .favorite{
+                position: absolute;
+                right: 18.35px;
+                top: 20px;
+            }
+        }
+        .namemoney{
+            display: flex;
+            justify-content: center;
+            border: solid 1px #EAF0ED;
+            align-items: center;
+            .name{
+                border-right: solid 1px #EAF0ED;
+                padding: 14px 0px;
+                line-height: 20px;
+                text-align: center;
+                width: 60%;
+                box-sizing: border-box;
+            }
+            .money{
+                text-align: center;
+            }
+        }
+        a{
+            padding: 16px;
+            text-align: center;
+            background: #EAF0ED;
+            line-height: 20px;
+        }
+        a:hover{
+            padding: 16px;
+            text-align: center;
+            background: #3f5d45;
+            color: #EAF0ED;
+            line-height: 20px;
+        }
+    }
+}
+.changepage{
+    margin-bottom: 30px;
+    .page{
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        .number:hover{
+            background: #3f5d45;
+            color: #EAF0ED;
+          }
+          .icon:hover{
+            background: #EAF0ED;  
+          }
+    }
+    .number{
+        padding: 20px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        border: solid 1px #EAF0ED;
+        font-size: 20px;
+        line-height: 20px;
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        display: block;
+    }
+    img{
+        padding: 17px;
+        width: 60px;
+        box-sizing: border-box;
+        border: solid 1px #EAF0ED;
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+        .kindlist{
+            width: 100%;
+            margin-bottom: 33px;
+        }
+        .productlist{
+            width: 90%;
+            .name{
+                padding: 14px 0px;        
+            }
+        }
+    }    
+}
+@media(max-width: 375px){
+    .container{
+        .banner img{
+            margin-bottom: 0px;
+        }
+        .content{
+            flex-direction: column;
+            align-items: center;
+            .kindlist{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .productlist{
+                width: 80%;
+                li{
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 30px;
+                }
+                .name{
+                    padding: 14px 0px;
+                }
+            }
+            .changepage .page{
+                justify-content: center;
+            }    
+        }
+    }
+}

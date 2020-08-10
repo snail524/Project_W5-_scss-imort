@@ -1,0 +1,180 @@
+.content_receipt{
+    display: flex;
+    justify-content: center;
+    .input{
+        width: 50%;
+        margin-right: 20px;
+        .info{
+            background: $dark_green;
+            color: #EAF0ED;
+            padding: 30px 40px;
+            .title {
+                position: relative;
+                h3{
+                    position: absolute;
+                }
+                .icon_ab{
+                    position: absolute;
+                }
+                .icon_line{
+                    color: #EAF0ED;
+                    border: solid 1px #EAF0ED;
+                    position: absolute;
+                }
+                .line_right{
+                    width: 50px;
+                    right: 20px;
+                }
+                .line_left{
+                    width: 45px;
+                    right: 85px;
+                }
+                .icon_left{
+                    right: 128px;
+                }
+                .icon_center{
+                    right: 64px;
+                }
+                .icon_right{
+                    right: 0px;
+                }   
+                
+            }
+            
+            
+            .select{
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                h3{
+                    padding-top: 14px ;
+                    padding-bottom: 14px;
+                    border:solid 1px #EAF0ED;
+                    width: 50%;
+                    text-align: center; 
+                    
+                }
+                .white{
+                    background: #EAF0ED;
+                    color: #3F5D45;
+                }
+            }
+            .input_info{
+                input{
+                    width: 100%;
+                    padding: 17px 0px;
+                    text-indent: 20px;
+                }
+            
+            }
+        }
+        .check{
+            input{
+                width: 100%;
+                background: #FFE180;
+                padding: 19px 0px 16px 0px;
+                color: #3F5D45;
+                font-size: 24px;
+                border: none;
+            }
+        }
+    }
+    .order_info{
+        width: 40%;
+        
+        .order_simple{
+            margin-bottom: 20px;
+            h3{
+                padding: 16px 0px;
+                width: 100%;
+                background: $light_green;
+                text-align: center;
+            }
+            .money_amount{
+                border: solid 1px #EAF0ED;
+                display: flex;
+                padding: 16px 20px;
+                justify-content: space-between;
+            }
+        }
+        .order_list{
+            border: solid 1px #EAF0ED;
+            margin-bottom: 60px;
+            h3{
+                padding: 16px 0px;
+                width: 100%;
+                background: $light_green;
+                text-align: center;
+                
+            }
+            ul li{
+                display: flex;
+                justify-content: center;
+                .photo{
+                    width: 40%;
+                    // height: 50%;
+                    margin-bottom: 16px;
+
+                    img{
+                        // height: 30%;
+                        width: 75%;
+                        display: block;
+                    }
+                }
+                
+                .title{
+                    width: 50%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            
+        }
+    }
+
+}
+@include pad(){
+    .content_receipt{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .input{
+            width: 90%;
+            margin-bottom: 0px;
+        }
+        .order_info{
+            width: 90%;
+            .order_simple{
+                margin-bottom: 0px;
+            }
+            .order_list{
+                flex-wrap: wrap;
+                margin-bottom: 16px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 45%;
+            }
+        }
+            
+    }
+
+
+}
+@include mobile375(){
+    .order_info{
+        display: none;
+    }
+    .content_receipt .input .info{
+        padding: 30px;
+    }
+
+    .content_receipt .input{
+        width: 100%;
+    }
+}
