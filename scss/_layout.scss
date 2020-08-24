@@ -43,6 +43,10 @@ a{
         width: 215px;
         display: flex;
         justify-content: space-around;
+        a:hover{
+            background: #3F5D45;
+            color: white
+        }
     }
     .shopping_cart img{
         margin-left: 30px;
@@ -209,17 +213,29 @@ a{
             text-align: center;
             a:hover{
                 background: #EAF0ED;
+
             }
+
         }
+
   
+
     }
+
     .header{
+
         margin-bottom: 0;
+
         margin-top: 0;
+
         padding: 16px 0px;
+
         .wrap_page{
+
             display: none;
+
         }
+       
         .shopping_cart img{
             height: 18px;
             width: 18px; 
