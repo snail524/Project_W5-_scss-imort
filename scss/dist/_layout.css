@@ -88,6 +88,9 @@ a {
   /* width: 380px; */
   width: 40%;
 }
+.footer .input input {
+  outline: none;
+}
 .footer .input .mailicon {
   position: absolute;
   left: 16px;

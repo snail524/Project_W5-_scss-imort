@@ -83,6 +83,9 @@ a{
         display: inline-block;
         /* width: 380px; */
         width: 40%;
+        input{
+            outline: none;
+        }
         .mailicon{
             position: absolute;
             left: 16px;
